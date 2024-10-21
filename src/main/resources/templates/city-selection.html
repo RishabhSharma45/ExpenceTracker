@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Select Your City</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+
+        /* Customizing the navbar */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        /* Styling the city selection section */
+        .city-container {
+            background-color: rgba(0, 0, 0, 0.6); /* Grayish background */
+            color: white;
+            padding: 50px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        .city-container h2 {
+            margin-bottom: 30px;
+        }
+
+        /* Styling the city images */
+        .city {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .city img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .city-name {			
+			position: absolute;
+			    bottom: 10px;
+			    left: 15px;
+			    right: 15px;
+			    font-size: 1.5rem;
+			    font-weight: bold;
+			    color: white;
+			    background-color: rgba(0, 0, 0, 0.5);
+			    padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">CityExpenseTracker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- City Selection Section -->
+    <div class="container city-container">
+        <h2>Select Your City</h2>
+        <div class="row">
+            <!-- Row 1 -->
+            <div class="col-md-4 city">
+                <a href="/salary-input?city=Bangalore">
+                    <img src="/images/bangalore.jpg" alt="Bangalore">
+                    <div class="city-name">Bangalore</div>
+                </a>
+            </div>
+            <div class="col-md-4 city">
+                <a href="/salary-input?city=Mumbai">
+                    <img src="/images/mumbai.jpg" alt="Mumbai">
+                    <div class="city-name">Mumbai</div>
+                </a>
+            </div>
+            <div class="col-md-4 city">
+                <a href="/salary-input?city=Pune">
+                    <img src="/images/pune.jpg" alt="Pune">
+                    <div class="city-name">Pune</div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Row 2 -->
+            <div class="col-md-4 city">
+                <a href="/salary-input?city=Delhi">
+                    <img src="/images/delhi.jpg" alt="Delhi">
+                    <div class="city-name">Delhi</div>
+                </a>
+            </div>
+            <div class="col-md-4 city">
+                <a href="/salary-input?city=Chennai">
+                    <img src="/images/chennai.jpg" alt="Chennai">
+                    <div class="city-name">Chennai</div>
+                </a>
+            </div>
+            <div class="col-md-4 city">
+                <a href="/salary-input?city=Kolkata">
+                    <img src="/images/kolkata.jpg" alt="Kolkata">
+                    <div class="city-name">Kolkata</div>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Row 3 -->
+            <div class="col-md-4 city">
+                <a href="/salary-input?city=Hyderabad">
+                    <img src="/images/hyderabad.jpg" alt="Hyderabad">
+                    <div class="city-name">Hyderabad</div>
+                </a>
+            </div>
+            <div class="col-md-4 city">
+                <a href="/salary-input?city=Indore">
+                    <img src="/images/indore.jpg" alt="Indore">
+                    <div class="city-name">Indore</div>
+                </a>
+            </div>
+            <div class="col-md-4 city">
+                <a href="/salary-input?city=Ahmedabad">
+                    <img src="/images/ahmedabad.jpg" alt="Ahmedabad">
+                    <div class="city-name">Ahmedabad</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
